@@ -1,0 +1,1222 @@
+{
+  "sections": {
+    "9db669ec-e36b-42f0-a69e-c98e639e4bf0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21324546343230__9db669ec-e36b-42f0-a69e-c98e639e4bf0-img-1": {
+          "type": "img",
+          "settings": {
+            "image_sl": "shopify:\/\/shop_images\/banner_23_3.png",
+            "link_img": "",
+            "open_link": "_blank",
+            "cusotm-width": 50,
+            "h_position": "left",
+            "v_position": "middle",
+            "txt_align": "left"
+          }
+        },
+        "ec2df4d6-a9ba-4a9d-b3f9-f1b9cc97512f": {
+          "type": "subhd",
+          "settings": {
+            "title": "Quick Parcel Delivery, From $25",
+            "text_animate": "fadeInUp",
+            "text_time": 3.5,
+            "color": "#222",
+            "linear_gradient": "",
+            "fs_text": 24,
+            "fw_text": 400,
+            "lh_text": 24,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "hide": false,
+            "first_mark": false,
+            "last_mark": true,
+            "custom_mark": "4",
+            "color_mark": "#92ac28",
+            "mobile_font_text": 18,
+            "mobile_fw_text": 400,
+            "mobile_lh_text": 24
+          }
+        },
+        "a37497ca-fff0-4888-9ed8-738f5f7027ef": {
+          "type": "space",
+          "settings": {
+            "hide_mobile": false,
+            "sp": 20,
+            "mobile_sp": 10
+          }
+        },
+        "defd90f0-1a0e-4d4c-a8a5-a94ad4fca11c": {
+          "type": "hd",
+          "settings": {
+            "hide": false,
+            "title": "Hanging Plants<br>\nUp To 45% Discount!",
+            "text_animate": "fadeInUp",
+            "text_time": 3.5,
+            "color": "#222222",
+            "linear_gradient": "",
+            "fs_text": 60,
+            "fw_text": 500,
+            "lh_text": 60,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "first_mark": false,
+            "last_mark": false,
+            "custom_mark": "",
+            "color_mark": "",
+            "mobile_font_text": 40,
+            "mobile_fw_text": 400,
+            "mobile_lh_text": 40
+          }
+        },
+        "760fa0a8-b617-4b24-b8fa-34f7575cb6ff": {
+          "type": "space",
+          "settings": {
+            "hide_mobile": false,
+            "sp": 30,
+            "mobile_sp": 15
+          }
+        },
+        "ea26f02c-7f7e-4988-946f-30bd3306386f": {
+          "type": "btn",
+          "settings": {
+            "title": "Explore Now",
+            "text_animate": "fadeInUp",
+            "text_time": 3.5,
+            "btn_link": "#",
+            "cl_txt": "#ffffff",
+            "cl_txt_hover": "#ffffff",
+            "cl_bg": "#222222",
+            "cl_bg_hover": "#c7ab62",
+            "fs_text": 16,
+            "fw_text": 400,
+            "ls_text": 0,
+            "button_transform": "capitalize",
+            "br_button": 3,
+            "mobile_font_text": 16,
+            "mobile_fw_text": 400
+          }
+        },
+        "template--21324546343230__9db669ec-e36b-42f0-a69e-c98e639e4bf0-img-2": {
+          "type": "img",
+          "settings": {
+            "image_sl": "shopify:\/\/shop_images\/banner_23_2.png",
+            "link_img": "#",
+            "open_link": "_blank",
+            "cusotm-width": 50,
+            "h_position": "left",
+            "v_position": "middle",
+            "txt_align": "left"
+          }
+        },
+        "c7b6a108-c386-4ab4-b8f5-9e643ae93355": {
+          "type": "subhd",
+          "settings": {
+            "title": "Quick Parcel Delivery, From $25",
+            "text_animate": "fadeInUp",
+            "text_time": 3.5,
+            "color": "#222",
+            "linear_gradient": "",
+            "fs_text": 24,
+            "fw_text": 400,
+            "lh_text": 24,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "hide": false,
+            "first_mark": false,
+            "last_mark": true,
+            "custom_mark": "4",
+            "color_mark": "#92ac28",
+            "mobile_font_text": 18,
+            "mobile_fw_text": 400,
+            "mobile_lh_text": 24
+          }
+        },
+        "7a9b46f0-64fe-45f2-9a86-5fae8728cc73": {
+          "type": "space",
+          "settings": {
+            "hide_mobile": false,
+            "sp": 20,
+            "mobile_sp": 10
+          }
+        },
+        "c7c219ca-5b2f-4db8-a2dd-53ad9be2a2b1": {
+          "type": "hd",
+          "settings": {
+            "hide": false,
+            "title": "Houseplant<br>\nThe Perfact Choise!",
+            "text_animate": "fadeInUp",
+            "text_time": 3.5,
+            "color": "#222222",
+            "linear_gradient": "",
+            "fs_text": 60,
+            "fw_text": 500,
+            "lh_text": 60,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "first_mark": false,
+            "last_mark": false,
+            "custom_mark": "",
+            "color_mark": "",
+            "mobile_font_text": 40,
+            "mobile_fw_text": 400,
+            "mobile_lh_text": 30
+          }
+        },
+        "12b18f5b-d591-4d44-95d7-9489d09b76c9": {
+          "type": "space",
+          "settings": {
+            "hide_mobile": false,
+            "sp": 30,
+            "mobile_sp": 15
+          }
+        },
+        "f80b98db-7e64-4ac4-8501-a41cafaf6280": {
+          "type": "btn",
+          "settings": {
+            "title": "Explore Now",
+            "text_animate": "fadeInUp",
+            "text_time": 3.5,
+            "btn_link": "#",
+            "cl_txt": "#ffffff",
+            "cl_txt_hover": "#ffffff",
+            "cl_bg": "#222222",
+            "cl_bg_hover": "#c7ab62",
+            "fs_text": 16,
+            "fw_text": 400,
+            "ls_text": 0,
+            "button_transform": "capitalize",
+            "br_button": 3,
+            "mobile_font_text": 16,
+            "mobile_fw_text": 400
+          }
+        },
+        "e6440a21-227a-4cc8-bec6-bb690747cdcf": {
+          "type": "img",
+          "settings": {
+            "image_sl": "shopify:\/\/shop_images\/banner_23_1.png",
+            "link_img": "#",
+            "open_link": "_blank",
+            "cusotm-width": 50,
+            "h_position": "left",
+            "v_position": "middle",
+            "txt_align": "left"
+          }
+        },
+        "6f8b3f09-fb0b-4073-88f6-6df30fbb66fc": {
+          "type": "subhd",
+          "settings": {
+            "title": "Quick Parcel Delivery, From $25",
+            "text_animate": "fadeInDown",
+            "text_time": 3.5,
+            "color": "#111",
+            "linear_gradient": "",
+            "fs_text": 24,
+            "fw_text": 400,
+            "lh_text": 24,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "hide": false,
+            "first_mark": false,
+            "last_mark": true,
+            "custom_mark": "4",
+            "color_mark": "#92ac28",
+            "mobile_font_text": 18,
+            "mobile_fw_text": 400,
+            "mobile_lh_text": 24
+          }
+        },
+        "f10c8da3-1faf-45b3-a238-9c916b8f0ed2": {
+          "type": "space",
+          "settings": {
+            "hide_mobile": false,
+            "sp": 20,
+            "mobile_sp": 10
+          }
+        },
+        "f6ff90e2-e602-436d-a667-9eb263578d9e": {
+          "type": "hd",
+          "settings": {
+            "hide": false,
+            "title": "Sale In Lookbook<br>\nMake You Happy",
+            "text_animate": "fadeInDown",
+            "text_time": 3.5,
+            "color": "#222222",
+            "linear_gradient": "",
+            "fs_text": 60,
+            "fw_text": 500,
+            "lh_text": 60,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "first_mark": false,
+            "last_mark": false,
+            "custom_mark": "",
+            "color_mark": "",
+            "mobile_font_text": 40,
+            "mobile_fw_text": 400,
+            "mobile_lh_text": 40
+          }
+        },
+        "8c669eb7-dc69-42d6-9bd4-60439b0deb37": {
+          "type": "space",
+          "settings": {
+            "hide_mobile": false,
+            "sp": 35,
+            "mobile_sp": 15
+          }
+        },
+        "2f951bc9-a298-403d-a42a-74afd7dd3942": {
+          "type": "btn",
+          "settings": {
+            "title": "Explore Now",
+            "text_animate": "fadeInDown",
+            "text_time": 3.5,
+            "btn_link": "#",
+            "cl_txt": "#ffffff",
+            "cl_txt_hover": "#ffffff",
+            "cl_bg": "#222222",
+            "cl_bg_hover": "#c7ab62",
+            "fs_text": 16,
+            "fw_text": 400,
+            "ls_text": 0,
+            "button_transform": "capitalize",
+            "br_button": 3,
+            "mobile_font_text": 16,
+            "mobile_fw_text": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--21324546343230__9db669ec-e36b-42f0-a69e-c98e639e4bf0-img-1",
+        "ec2df4d6-a9ba-4a9d-b3f9-f1b9cc97512f",
+        "a37497ca-fff0-4888-9ed8-738f5f7027ef",
+        "defd90f0-1a0e-4d4c-a8a5-a94ad4fca11c",
+        "760fa0a8-b617-4b24-b8fa-34f7575cb6ff",
+        "ea26f02c-7f7e-4988-946f-30bd3306386f",
+        "template--21324546343230__9db669ec-e36b-42f0-a69e-c98e639e4bf0-img-2",
+        "c7b6a108-c386-4ab4-b8f5-9e643ae93355",
+        "7a9b46f0-64fe-45f2-9a86-5fae8728cc73",
+        "c7c219ca-5b2f-4db8-a2dd-53ad9be2a2b1",
+        "12b18f5b-d591-4d44-95d7-9489d09b76c9",
+        "f80b98db-7e64-4ac4-8501-a41cafaf6280",
+        "e6440a21-227a-4cc8-bec6-bb690747cdcf",
+        "6f8b3f09-fb0b-4073-88f6-6df30fbb66fc",
+        "f10c8da3-1faf-45b3-a238-9c916b8f0ed2",
+        "f6ff90e2-e602-436d-a667-9eb263578d9e",
+        "8c669eb7-dc69-42d6-9bd4-60439b0deb37",
+        "2f951bc9-a298-403d-a42a-74afd7dd3942"
+      ],
+      "settings": {
+        "hidden": false,
+        "full-screen": false,
+        "h_des": "720px",
+        "h_tb": "600px",
+        "h_mb": "450px",
+        "border": 0,
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 1,
+        "widescreen": 1,
+        "desktop": 1,
+        "laptop": 1,
+        "notebook": 1,
+        "tablet": 1,
+        "landscape": 1,
+        "portrait": 1,
+        "mobile": 1,
+        "rows": 1,
+        "autoplay": true,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "fade_zoom": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": true,
+        "infinite": false,
+        "padding": 0,
+        "vertical": false,
+        "position_dots": "center",
+        "style_dots": "default",
+        "custom_width": false,
+        "container_width": 1800,
+        "layout": "full-width",
+        "cl_bg": "#ffffff",
+        "mg": ",,,",
+        "pd": "",
+        "mg_mb": ",,,",
+        "pd_mb": ""
+      }
+    },
+    "79417091-7f3f-43bb-b035-db1e4988e824": {
+      "type": "Image-grid",
+      "blocks": {
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23_1.png",
+            "label": "mid- season",
+            "cl_label": "#92ac28",
+            "cl_span_label": "#d90a2c",
+            "title": "Hodies For Her",
+            "cl_title": "#222222",
+            "content": "Availbale online and in-store",
+            "cl_content": "#444444",
+            "link": "Shop now",
+            "btn_link": "shopify:\/\/collections\/womens",
+            "open_link": "_blank",
+            "cl_link": "#222222",
+            "cl_link_hover": "#c7ab62",
+            "bg_link": "#222222",
+            "bg_link_hover": "#c7ab62",
+            "btn_style": "link",
+            "h_position": "left",
+            "v_position": "top",
+            "txt_align": "left",
+            "mg_bottom": 0
+          }
+        },
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23_2.png",
+            "label": "Top Trending",
+            "cl_label": "#ffffff",
+            "cl_span_label": "#ea0d42",
+            "title": "Succulent Metal<br> Upto 30%",
+            "cl_title": "#ffffff",
+            "content": "",
+            "cl_content": "#444444",
+            "link": "Shop now",
+            "btn_link": "shopify:\/\/collections\/accessories",
+            "open_link": "_blank",
+            "cl_link": "#ffffff",
+            "cl_link_hover": "#ffffff",
+            "bg_link": "#ffffff",
+            "bg_link_hover": "#222222",
+            "btn_style": "link",
+            "h_position": "left",
+            "v_position": "top",
+            "txt_align": "left",
+            "mg_bottom": 0
+          }
+        },
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23_3.png",
+            "label": "Spring 2024",
+            "cl_label": "#ffffff",
+            "cl_span_label": "#ea0d42",
+            "title": "Top Wall<br>Planters",
+            "cl_title": "#ffffff",
+            "content": "",
+            "cl_content": "#222222",
+            "link": "Shop now",
+            "btn_link": "",
+            "open_link": "_blank",
+            "cl_link": "#ffffff",
+            "cl_link_hover": "#ffffff",
+            "bg_link": "#ffffff",
+            "bg_link_hover": "#222222",
+            "btn_style": "link",
+            "h_position": "left",
+            "v_position": "top",
+            "txt_align": "left",
+            "mg_bottom": 0
+          }
+        },
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23_4.png",
+            "label": "mid- season",
+            "cl_label": "#92ac28",
+            "cl_span_label": "#ea0d42",
+            "title": "The Elliot Modular<br>  Planters",
+            "cl_title": "#222222",
+            "content": "",
+            "cl_content": "#444444",
+            "link": "Shop now",
+            "btn_link": "shopify:\/\/collections\/all-fashion",
+            "open_link": "_blank",
+            "cl_link": "#222222",
+            "cl_link_hover": "#c7ab62",
+            "bg_link": "#ffffff",
+            "bg_link_hover": "#222222",
+            "btn_style": "link",
+            "h_position": "left",
+            "v_position": "top",
+            "txt_align": "left",
+            "mg_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-1",
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-2",
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-3",
+        "template--21324546343230__79417091-7f3f-43bb-b035-db1e4988e824-image-4"
+      ],
+      "settings": {
+        "hide_mobile": true,
+        "title": "",
+        "text_size": "medium",
+        "text_transform": "none",
+        "gap": 0,
+        "border": 0,
+        "layout": true,
+        "custom_width": true,
+        "container_width": 1800,
+        "cl_bg": "#ffffff",
+        "mg": ",,60px,",
+        "pd": "",
+        "mg_mb": ",,20px,",
+        "pd_mb": ""
+      }
+    },
+    "182e6935-a48a-4b80-8b07-e15aa9792b8f": {
+      "type": "collection-carousel-product",
+      "blocks": {
+        "cc9c51a7-1b1a-4926-a20f-ecdb5fe873df": {
+          "type": "product",
+          "settings": {
+            "product": "rojo-congo-philodendron"
+          }
+        },
+        "a25cde26-622d-4305-a8ef-775183ed0bc3": {
+          "type": "product",
+          "settings": {
+            "product": "devils-ivy"
+          }
+        },
+        "878a8a40-46c4-4ce6-9351-59ca9796de02": {
+          "type": "product",
+          "settings": {
+            "product": "yucca"
+          }
+        },
+        "2aef2ddb-d299-4f49-aa49-f12744540e7e": {
+          "type": "product",
+          "settings": {
+            "product": "umbrella-tree"
+          }
+        },
+        "d3c7dc0e-8377-4c48-9851-7eec3fb2e39e": {
+          "type": "product",
+          "settings": {
+            "product": "fiddle-leaf-fig"
+          }
+        },
+        "78a1e3a4-c34e-4419-adbc-34bd85963831": {
+          "type": "product",
+          "settings": {
+            "product": "zz-plant"
+          }
+        },
+        "5aab99bc-da6c-401f-925e-33ec27c38e1e": {
+          "type": "product",
+          "settings": {
+            "product": "monstera"
+          }
+        },
+        "1bd64bb3-8197-4aa9-81b8-6f2826a457c6": {
+          "type": "product",
+          "settings": {
+            "product": "cornstalk-dracaena"
+          }
+        }
+      },
+      "block_order": [
+        "cc9c51a7-1b1a-4926-a20f-ecdb5fe873df",
+        "a25cde26-622d-4305-a8ef-775183ed0bc3",
+        "878a8a40-46c4-4ce6-9351-59ca9796de02",
+        "2aef2ddb-d299-4f49-aa49-f12744540e7e",
+        "d3c7dc0e-8377-4c48-9851-7eec3fb2e39e",
+        "78a1e3a4-c34e-4419-adbc-34bd85963831",
+        "5aab99bc-da6c-401f-925e-33ec27c38e1e",
+        "1bd64bb3-8197-4aa9-81b8-6f2826a457c6"
+      ],
+      "settings": {
+        "title": "New Arrivals",
+        "text_size": "medium",
+        "text_transform": "capitalize",
+        "display_type": "selected",
+        "collection": "all-fashion",
+        "use-all-product": true,
+        "max_count": 10,
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 4,
+        "widescreen": 4,
+        "desktop": 4,
+        "laptop": 4,
+        "notebook": 4,
+        "tablet": 3,
+        "landscape": 2,
+        "portrait": 2,
+        "mobile": 1,
+        "rows": 2,
+        "autoplay": false,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": false,
+        "infinite": false,
+        "padding": 10,
+        "vertical": false,
+        "layout_des": false,
+        "custom_width": false,
+        "container_width": 1800,
+        "cl_bg": "#ffffff",
+        "mg": "",
+        "pd": ",,60px,",
+        "mg_mb": "",
+        "pd_mb": ",,30px,"
+      }
+    },
+    "7c84c02f-3785-41ea-80f2-84c73f9f7738": {
+      "type": "Image-with-text-overlay",
+      "blocks": {
+        "template--21324546343230__7c84c02f-3785-41ea-80f2-84c73f9f7738-banner_img-1": {
+          "type": "banner_img",
+          "settings": {
+            "image_sl": "shopify:\/\/shop_images\/23_5.png",
+            "link_img": "#",
+            "open_link": "_blank",
+            "hidden_content": false,
+            "h_position": "center",
+            "v_position": "top",
+            "txt_align": "center"
+          }
+        },
+        "87ac8831-86c2-4cbd-9711-75223e70fba3": {
+          "type": "label",
+          "settings": {
+            "title": "up to 50% off",
+            "cl_txt": "#ffffff",
+            "cl_bg": "#92ac28",
+            "fs_text": 13,
+            "fw_text": 400,
+            "button_transform": "uppercase",
+            "ls_text": "0",
+            "pd": "0 15px",
+            "mg_bottom": 10,
+            "mobile_fw_text": 400,
+            "mobile_font_text": 13,
+            "mobile_mg_bottom": 10
+          }
+        },
+        "7cacba19-d26e-4b2a-be18-5f63662ef789": {
+          "type": "hd",
+          "settings": {
+            "hide": false,
+            "title": "Bring Nature In Your Home",
+            "color": "#222222",
+            "fw_text": 400,
+            "fs_text": 60,
+            "lh_text": 80,
+            "ls_text": "0",
+            "text_transform": "capitalize",
+            "first_mark": false,
+            "last_mark": false,
+            "custom_mark": "",
+            "color_mark": "",
+            "mg_bottom": 15,
+            "mobile_font_text": 40,
+            "mobile_mg_bottom": 10
+          }
+        },
+        "1f31f4ba-b4a8-4126-bec0-04258d4bb150": {
+          "type": "txt",
+          "settings": {
+            "title": "Holiday shopping with 3% back rewards.<br>\nOffer expires 12\/31\/2021",
+            "color": "#111111",
+            "fw_text": 400,
+            "fs_text": 18,
+            "lh_text": 0,
+            "text_transform": "none",
+            "ls_text": 0,
+            "mg_bottom": 0,
+            "hide": false,
+            "mobile_font_text": 14,
+            "mobile_mg_bottom": 0
+          }
+        },
+        "5b1bdbd5-b229-4a0c-9e3b-ccafb2de1ef9": {
+          "type": "btn",
+          "disabled": true,
+          "settings": {
+            "title": "Explore Now",
+            "btn_link": "#",
+            "open_link": "_blank",
+            "cl_txt": "#222222",
+            "cl_txt_hover": "#222222",
+            "fs_text": 16,
+            "fw_text": 400,
+            "border": 3,
+            "button_transform": "capitalize",
+            "btn_style": "link",
+            "mobile_font_text": 13
+          }
+        }
+      },
+      "block_order": [
+        "template--21324546343230__7c84c02f-3785-41ea-80f2-84c73f9f7738-banner_img-1",
+        "87ac8831-86c2-4cbd-9711-75223e70fba3",
+        "7cacba19-d26e-4b2a-be18-5f63662ef789",
+        "1f31f4ba-b4a8-4126-bec0-04258d4bb150",
+        "5b1bdbd5-b229-4a0c-9e3b-ccafb2de1ef9"
+      ],
+      "settings": {
+        "hidden": false,
+        "h_des": "760px",
+        "h_tb": "500px",
+        "h_mb": "400px",
+        "border": 3,
+        "full_width": true,
+        "custom_width": false,
+        "container_width": 1800,
+        "cl_bg": "",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_mb": ",,40px,",
+        "pd_mb": ""
+      }
+    },
+    "fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6": {
+      "type": "collection-list-slider",
+      "blocks": {
+        "template--21763634757923__fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "plants-accessories",
+            "image": "shopify:\/\/shop_images\/col_23_1.png",
+            "title": "Plants & Accessories",
+            "content": "",
+            "btn_name": "Explore Now"
+          }
+        },
+        "template--21763634757923__fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "make-you-happy",
+            "image": "shopify:\/\/shop_images\/col_23_2.png",
+            "title": "Make You Happy",
+            "content": "",
+            "btn_name": "Explore Now"
+          }
+        },
+        "template--21763634757923__fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale-in-lookbook",
+            "image": "shopify:\/\/shop_images\/col_23_3.png",
+            "title": "Sale In Lookbook",
+            "content": "",
+            "btn_name": "Explore Now"
+          }
+        }
+      },
+      "block_order": [
+        "template--21763634757923__fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6-collection-1",
+        "template--21763634757923__fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6-collection-2",
+        "template--21763634757923__fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6-collection-3"
+      ],
+      "settings": {
+        "title": "Shop The Collections",
+        "text_size": "medium",
+        "text_transform": "none",
+        "border": 0,
+        "all-collection": true,
+        "num_p_qty": false,
+        "use_eq_height": true,
+        "image_ratio": "ratio3_4",
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 3,
+        "widescreen": 3,
+        "desktop": 3,
+        "laptop": 3,
+        "notebook": 3,
+        "tablet": 3,
+        "landscape": 2,
+        "portrait": 2,
+        "mobile": 1,
+        "rows": 1,
+        "autoplay": true,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": false,
+        "infinite": false,
+        "padding": 10,
+        "vertical": false,
+        "layout": false,
+        "cl_bg": "#ffffff",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_mb": ",,40px,",
+        "pd_mb": ""
+      }
+    },
+    "71159fae-6fa7-4584-b030-12c5587accdf": {
+      "type": "collection-carousel-product",
+      "settings": {
+        "title": "Top Trending",
+        "text_size": "medium",
+        "text_transform": "capitalize",
+        "display_type": "coll",
+        "collection": "all-plants",
+        "use-all-product": true,
+        "max_count": 10,
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 4,
+        "widescreen": 4,
+        "desktop": 4,
+        "laptop": 4,
+        "notebook": 3,
+        "tablet": 3,
+        "landscape": 2,
+        "portrait": 2,
+        "mobile": 1,
+        "rows": 1,
+        "autoplay": true,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": false,
+        "infinite": false,
+        "padding": 10,
+        "vertical": false,
+        "layout_des": false,
+        "custom_width": false,
+        "container_width": 1200,
+        "cl_bg": "#ffffff",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_mb": ",,40px,",
+        "pd_mb": ""
+      }
+    },
+    "65bc9f5f-0663-4689-9a0a-a3b27651455e": {
+      "type": "testimonials",
+      "blocks": {
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-1": {
+          "type": "quote",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial1.jpg",
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-2": {
+          "type": "quote",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial2.jpg",
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-3": {
+          "type": "quote",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial3.jpg",
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-4": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-5": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-6": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-7": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        },
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-8": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "content": "<p>We've recently updated our entire product portfolio to give customers and partners the best products with the newest <\/p><p>technology. Come see our expanded award-winning product line.”<\/p>",
+            "title": "Jason K. Manato",
+            "address": "Ceo & Co",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-1",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-2",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-3",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-4",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-5",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-6",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-7",
+        "template--21324546343230__65bc9f5f-0663-4689-9a0a-a3b27651455e-quote-8"
+      ],
+      "settings": {
+        "title": "What Client Says",
+        "subtitle": "",
+        "content": "",
+        "text_size": "medium",
+        "text_transform": "capitalize",
+        "show_text_bottom": false,
+        "text_bottom": "<p>Trusted customers are our happiness. Contact us.<\/p><p><\/p>",
+        "hidden": false,
+        "layout": "container",
+        "width_c": 100,
+        "style": "style1",
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 1,
+        "widescreen": 1,
+        "desktop": 1,
+        "laptop": 1,
+        "notebook": 1,
+        "tablet": 1,
+        "landscape": 1,
+        "portrait": 1,
+        "mobile": 1,
+        "rows": 1,
+        "autoplay": false,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": true,
+        "infinite": false,
+        "padding": 10,
+        "vertical": false,
+        "cl_bg": "#f8f5ec",
+        "mg": ",,80px,",
+        "pd": "80px,,80px,",
+        "mg_mb": ",,40px,",
+        "pd_mb": "40px,,40px,"
+      }
+    },
+    "2f399b88-d4b1-42e5-afa6-99135e10ab05": {
+      "type": "featured_blog",
+      "settings": {
+        "title": "From The Blog",
+        "text_size": "medium",
+        "text_transform": "capitalize",
+        "blog": "plants",
+        "use-all-post": true,
+        "br_radius": 0,
+        "show-cate-blog": true,
+        "show-post-info": true,
+        "show-name-blog": true,
+        "show-description": false,
+        "show-read_more": true,
+        "use_eq_height": true,
+        "image_ratio": "ratio4_3",
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 3,
+        "widescreen": 3,
+        "desktop": 3,
+        "laptop": 3,
+        "notebook": 3,
+        "tablet": 2,
+        "landscape": 2,
+        "portrait": 1,
+        "mobile": 1,
+        "rows": 1,
+        "autoplay": true,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": false,
+        "infinite": false,
+        "padding": 10,
+        "vertical": false,
+        "layout": "container",
+        "cl_bg": "#ffffff",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_mb": ",,40px,",
+        "pd_mb": ""
+      }
+    },
+    "5052f17b-16c8-45fc-a760-5a6ce3342235": {
+      "type": "brand-slider",
+      "blocks": {
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-1": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_1.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        },
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-2": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_2.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        },
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-3": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_3.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        },
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-4": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_4.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        },
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-5": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_5.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        },
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-6": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_6.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        },
+        "045222c8-5c0f-4d33-a679-9cfb836ab674": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_19_1.png",
+            "url": "#",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-1",
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-2",
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-3",
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-4",
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-5",
+        "template--21324546343230__5052f17b-16c8-45fc-a760-5a6ce3342235-brand-6",
+        "045222c8-5c0f-4d33-a679-9cfb836ab674"
+      ],
+      "settings": {
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 7,
+        "widescreen": 7,
+        "desktop": 6,
+        "laptop": 6,
+        "notebook": 5,
+        "tablet": 4,
+        "landscape": 2,
+        "portrait": 2,
+        "mobile": 2,
+        "rows": 1,
+        "autoplay": false,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": false,
+        "infinite": false,
+        "padding": 10,
+        "vertical": false,
+        "show_view_all": false,
+        "layout": false,
+        "border": 3,
+        "use_eq_height": false,
+        "image_ratio": "ratio2_1",
+        "cl_bg": "#f8f5ec",
+        "cl_border": "#f8f5ec",
+        "mg": ",,,",
+        "pd": "60px,,60px,",
+        "mg_mb": ",,,",
+        "pd_mb": "40px,,40px,"
+      }
+    },
+    "6c4e3727-9136-40be-b0f8-87f266dfdc8c": {
+      "type": "instagram-image-slider",
+      "blocks": {
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-1": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instagram_19_1.png",
+            "url": ""
+          }
+        },
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-2": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instagram_19_2.png",
+            "url": ""
+          }
+        },
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-3": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instagram_19_3.png",
+            "url": ""
+          }
+        },
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-4": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instagram_19_4.png",
+            "url": ""
+          }
+        },
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-5": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instagram_19_5.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-1",
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-2",
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-3",
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-4",
+        "template--21324546343230__6c4e3727-9136-40be-b0f8-87f266dfdc8c-img-5"
+      ],
+      "settings": {
+        "title": "",
+        "content": "",
+        "text_size": "medium",
+        "text_transform": "capitalize",
+        "border": 0,
+        "use-slider": true,
+        "slides-To-Scroll": 1,
+        "visible": 5,
+        "widescreen": 5,
+        "desktop": 5,
+        "laptop": 4,
+        "notebook": 4,
+        "tablet": 4,
+        "landscape": 3,
+        "portrait": 2,
+        "mobile": 1,
+        "rows": 1,
+        "autoplay": true,
+        "speed": "300",
+        "autoplay-Speed": "3000",
+        "arrows": true,
+        "fade": false,
+        "center-Mode": false,
+        "adaptive-Height": false,
+        "dots": false,
+        "infinite": false,
+        "padding": 0,
+        "vertical": false,
+        "layout": "full-width",
+        "cl_bg": "#ffffff",
+        "mg": ",,,",
+        "pd": "",
+        "mg_mb": ",,,",
+        "pd_mb": ""
+      }
+    },
+    "9ff9908e-40bc-4a68-93f9-10b0f925f67f": {
+      "type": "newsletter",
+      "settings": {
+        "width_c": 50,
+        "title": "Let’s Stay in Touch",
+        "cl_title": "#222222",
+        "subtitle": "",
+        "cl_subtitle": "#444444",
+        "content": "Subscirbe to the Ohey mailing list to receive updates on new <br>\narrivals, special offers and other discount information",
+        "cl_content": "#444444",
+        "text_size": "medium",
+        "text_transform": "capitalize",
+        "position": "center",
+        "layout": "container",
+        "design": "design-1",
+        "cl_bg": "#f8f5ec",
+        "cl_border": "#222222",
+        "mg": ",,,",
+        "pd": "80px,,80px,",
+        "mg_mb": "",
+        "pd_mb": "40px,,40px,"
+      }
+    }
+  },
+  "order": [
+    "9db669ec-e36b-42f0-a69e-c98e639e4bf0",
+    "79417091-7f3f-43bb-b035-db1e4988e824",
+    "182e6935-a48a-4b80-8b07-e15aa9792b8f",
+    "7c84c02f-3785-41ea-80f2-84c73f9f7738",
+    "fbc4ee09-5104-46b8-a68a-c8e0ec11c0f6",
+    "71159fae-6fa7-4584-b030-12c5587accdf",
+    "65bc9f5f-0663-4689-9a0a-a3b27651455e",
+    "2f399b88-d4b1-42e5-afa6-99135e10ab05",
+    "5052f17b-16c8-45fc-a760-5a6ce3342235",
+    "6c4e3727-9136-40be-b0f8-87f266dfdc8c",
+    "9ff9908e-40bc-4a68-93f9-10b0f925f67f"
+  ]
+}

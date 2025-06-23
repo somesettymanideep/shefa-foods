@@ -1,0 +1,20 @@
+<img
+    {% if settings.product_info_enable_zoom %} data-style-zoom ="{{settings.type_zoom}}" data-zoom-image="{{ media.src | img_url: '1920x' }}" {% endif %} 
+    srcset="{%- if media.preview_image.width >= 550 -%}{{ media.preview_image | image_url: width: 550 }} 550w,{%- endif -%}
+            {%- if media.preview_image.width >= 1100 -%}{{ media.preview_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+            {%- if media.preview_image.width >= 1445 -%}{{ media.preview_image | image_url: width: 1445 }} 1445w,{%- endif -%}
+            {%- if media.preview_image.width >= 1680 -%}{{ media.preview_image | image_url: width: 1680 }} 1680w,{%- endif -%}
+            {%- if media.preview_image.width >= 2048 -%}{{ media.preview_image | image_url: width: 2048 }} 2048w,{%- endif -%}
+            {%- if media.preview_image.width >= 2200 -%}{{ media.preview_image | image_url: width: 2200 }} 2200w,{%- endif -%}
+            {%- if media.preview_image.width >= 2890 -%}{{ media.preview_image | image_url: width: 2890 }} 2890w,{%- endif -%}
+            {%- if media.preview_image.width >= 4096 -%}{{ media.preview_image | image_url: width: 4096 }} 4096w,{%- endif -%}
+            {{ media.preview_image | image_url }} {{ media.preview_image.width }}w"
+    sizes="(min-width: 750px) calc(100vw - 22rem), 1100px"
+    src="{{ media.preview_image | image_url: width: 1445 }}"
+    sizes="(min-width: 1170px) {{ 1170 | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+    alt="{{ media.src.alt | escape }}"
+    class="main-image js-image-{{media.id }}"
+    width="{{ media.src.width }}"
+    height="{{ media.src.height }}"
+   loading="lazy"
+  > 

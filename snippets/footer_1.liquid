@@ -1,0 +1,250 @@
+          {%- for block in section.blocks -%}
+                  {%-capture Heading -%}  
+                    {%- if block.settings.title != blank -%}
+                       <h3 class="widget-title {{ block.settings.text_size }}">
+                          <span class="txt_title alo-color alo-text-transform" style="--alo-color:{{ block.settings.cl_heading }};--alo-text-transform:{{ block.settings.text_transform }};">{{block.settings.title}}</span>
+                          <span class="icon_mobile alo-color" style="--alo-color:{{ block.settings.cl_heading }};" ><i class="laber-icon-down icon-chevron-down"></i><i class="laber-icon-up icon-chevron-up"></i></span>
+                        </h3>
+                    {% endif %}  
+                  {%-endcapture -%} 
+                  {% case block.settings.col %}
+                        {% when '16%' %}
+                            {%- assign block_width = 'col-lg-2 col-md-6 col-12' -%}
+                        {% when '25%' %}
+                            {%- assign block_width = 'col-lg-3 col-md-6 col-12' -%}
+                        {% when '33%' %}
+                            {%- assign block_width = 'col-lg-4 col-md-6 col-12' -%}
+                        {% when '42%' %}
+                            {%- assign block_width = 'col-lg-5 col-md-6 col-12' -%}
+                        {% when '50%' %}
+                            {%- assign block_width = 'col-lg-6 col-md-6 col-12' -%}
+                        {% when '58%' %}
+                            {%- assign block_width = 'col-lg-7 col-md-6 col-12' -%}
+                        {% when '66%' %}
+                            {%- assign block_width = 'col-lg-8 col-md-6 col-12' -%}
+                        {% when '75%' %}
+                            {%- assign block_width = 'col-lg-9 col-md-6 col-12' -%}
+                        {% when '100%' %}
+                            {%- assign block_width = 'col-12' -%}
+                    {% endcase %}
+                  {%- case block.type -%}
+                  {%- when 'mail' -%} 
+                    
+                  <div class="footer-iteam {{ block_width }} sm:mb-{{ block.settings.sm_mg_b }} mb-{{ block.settings.mg_b }}" {{ block.shopify_attributes }}> 
+                    <aside id="block_{{block.id}}" class="labernewsletter widget widget_text alo-mail" style="--alo-border-radius:{{ block.settings.border }}px;--color-btn:{{ block.settings.cl_btn }};">
+                        {{ Heading | strip_newlines | remove:"  "}}
+                        <div class="widget_footer" style="--alo-color-text:{{block.settings.cl_text}};">
+                          {% if block.settings.sub_title %}
+                          <div class="sub-email">
+                            {{block.settings.sub_title}}
+                          </div>
+                          {% endif %}
+                          
+                          <div class="textwidget">
+                            <div class="footer-mail">                                   	
+                              {%- form 'customer', class:'newsletter-form-footer' -%}
+                              <input type="hidden" name="contact[tags]" value="newsletter">
+                              <div class="mc4wp-form-fields">
+                                <div class="signup-newsletter-form  {{class}}">
+                                  <div class="col_email">
+                                  <input type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+                                  <div class="col_btn">
+                                    <button type="submit" class="submit-btn truncate{% if settings.checkbox_mail %} mail_agree pr{% endif %}">
+                                      <span> 
+                                        {{ 'general.newsletter_form.submit' | t }} 
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                                {%- if settings.checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
+                              </div>
+                              <div class="mc4wp-response">
+                                {%- if form.posted_successfully? -%}<div class="shopify-message"><i class="las la-check"></i>{{ 'general.newsletter_form.confirmation' | t }}</div>{%- elsif form.errors -%}<div class="shopify-error"><i class="las la-exclamation-triangle"></i>{{ form.errors | default_errors }}</div>{%- endif -%}
+                              </div>
+                              {%- endform -%}								
+                            </div>
+                          </div>
+                          {% if block.settings.sub_title2 %}
+                          <div class="sub-email2">
+                            {{block.settings.sub_title2}}
+                          </div>
+                          {% endif %}
+                          {%if block.settings.use_social%}
+                            {% render 'social_link' %}
+                          {% endif %}
+                        </div>
+                    </aside>
+                  </div>
+                    {% style %}
+                        #block_{{block.id}}.widget_mail .widget_footer .signup-newsletter-form .submit-btn{background: {{ block.settings.cl_sub }};border-color: {{ block.settings.cl_sub }};}
+                        #block_{{block.id}}.widget_mail .widget_footer .signup-newsletter-form .submit-btn:hover{background: {{ block.settings.cl_sub_hover }};border-color: {{ block.settings.cl_sub_hover }};}
+                      {% endstyle %}  
+				  {%- when 'text' -%}
+                          <div class="footer-iteam {{ block_width }}" {{ block.shopify_attributes }}>
+                        <aside id="block_{{block.id}}" class="widget widget_text">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="textwidget widget_footer alo-color" style="--alo-color:{{ block.settings.cl_content }};">{{block.settings.content}}</div>
+                          </aside>
+						</div>
+                   {%- when 'contact_information' -%}
+                    
+                        <div class="footer-iteam contact_information {{ block_width }}" {{ block.shopify_attributes }}>
+                        <aside id="block_{{block.id}}" class="widget widget_text">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="textwidget widget_footer">
+                               <div class="information">
+                                   {%- if block.settings.text2 -%}<div class="Address" style="color:{{ block.settings.cl_text }}">{{ block.settings.text2 }} </div>{%endif%} 
+                                   {%- if block.settings.show_phone -%}
+                                     <div class="wrap-phone">
+                                         <span class="icon" style="--fill:{{ block.settings.cl_phone }}"><svg height="50px" viewBox="0 -9 512.00101 512" width="50px" xmlns="http://www.w3.org/2000/svg"><path d="m484.847656 243.015625v-16.414063c0-60.285156-23.636718-117.121093-66.558594-160.042968-42.917968-42.921875-99.757812-66.558594-160.042968-66.558594-117.925782 0-217.183594 92.101562-225.96875 209.679688-.3125 4.15625 2.804687 7.773437 6.960937 8.082031 4.167969.316406 7.769531-2.804688 8.082031-6.957031 8.199219-109.75 100.851563-195.71875 210.925782-195.71875 56.257812 0 109.308594 22.066406 149.378906 62.136718 40.070312 40.070313 62.140625 93.121094 62.140625 149.378906v7.296876c-6.058594-2.695313-12.558594-4.570313-19.359375-5.476563v-1.820313c0-43.582031-14.328125-84.671874-41.429688-118.824218-2.585937-3.265625-7.332031-3.8125-10.597656-1.222656-3.261718 2.589843-3.808594 7.335937-1.21875 10.597656 24.964844 31.457031 38.160156 69.304687 38.160156 109.449218v1.171876h-18.984374v-6.972657c0-12.476562-10.148438-22.628906-22.625-22.628906h-12.871094c-12.476563 0-22.625 10.152344-22.625 22.628906v152.210938c0 12.476562 10.148437 22.625 22.625 22.625h12.871094c12.476562 0 22.625-10.148438 22.625-22.625v-3.15625h24.625c39.171874 0 71.039062-31.867188 71.039062-71.042969 0-22.609375-10.636719-42.777344-27.152344-55.796875zm-83.59375 129.996094c0 4.160156-3.382812 7.542969-7.542968 7.542969h-12.871094c-4.160156 0-7.542969-3.382813-7.542969-7.542969v-152.210938c0-4.160156 3.382813-7.542969 7.542969-7.542969h12.871094c4.160156 0 7.542968 3.382813 7.542968 7.542969zm39.707032-18.238281h-24.449219v-111.914063h24.449219c30.855468 0 55.957031 25.101563 55.957031 55.957031-.003907 30.855469-25.101563 55.957032-55.957031 55.957032zm0 0"/><path d="m302.902344 434.984375h-70.09375c-11.667969 0-21.296875 8.875-22.5 20.226563h-82.777344c-30.9375 0-56.109375-25.167969-56.109375-56.109376v-29.242187h24.242187v3.152344c0 12.476562 10.148438 22.628906 22.625 22.628906h12.871094c12.476563 0 22.625-10.152344 22.625-22.628906v-97.789063c0-4.167968-3.375-7.542968-7.542968-7.542968-4.164063 0-7.539063 3.375-7.539063 7.542968v97.789063c0 4.160156-3.382813 7.542969-7.542969 7.542969h-12.871094c-4.160156 0-7.542968-3.382813-7.542968-7.542969v-152.210938c0-4.160156 3.382812-7.542969 7.542968-7.542969h12.871094c4.160156 0 7.542969 3.382813 7.542969 7.542969v24.25c0 4.167969 3.375 7.542969 7.539063 7.542969 4.167968 0 7.542968-3.375 7.542968-7.542969v-24.25c0-12.476562-10.148437-22.625-22.625-22.625h-12.871094c-12.476562 0-22.625 10.148438-22.625 22.625v6.976563h-14.492187v-1.175782c0-47.054687 18.488281-91.453124 52.054687-125.019531 33.5625-33.566406 77.964844-52.050781 125.019532-52.050781 44.667968 0 87.382812 16.855469 120.273437 47.46875 3.050781 2.835938 7.820313 2.664062 10.660157-.382812 2.839843-3.050782 2.667968-7.820313-.382813-10.660157-35.691406-33.21875-82.054687-51.511719-130.550781-51.511719-51.082032 0-99.273438 20.054688-135.6875 56.46875-36.414063 36.414063-56.46875 84.605469-56.46875 135.6875v1.367188c-36.867188 2.550781-66.089844 33.34375-66.089844 70.847656 0 34.132813 24.199219 62.710938 56.335938 69.5v30.785156c0 39.257813 31.9375 71.195313 71.195312 71.195313h82.648438v2.023437c0 12.476563 10.152343 22.625 22.628906 22.625h70.09375c12.472656 0 22.625-10.148437 22.625-22.625v-14.710937c0-12.476563-10.148438-22.625-22.625-22.625zm-287.816406-136.167969c0-30.855468 25.101562-55.957031 55.953124-55.957031h24.449219v111.914063h-24.449219c-30.851562 0-55.953124-25.101563-55.953124-55.957032zm295.359374 173.503906c0 4.160157-3.382812 7.542969-7.542968 7.542969h-70.09375c-4.160156 0-7.542969-3.382812-7.542969-7.542969v-14.710937c0-4.160156 3.382813-7.542969 7.542969-7.542969h70.09375c4.160156 0 7.542968 3.382813 7.542968 7.542969zm0 0"/></svg></span>
+                                         <p>
+                                             {%- if block.settings.text1 -%}<span class="text" style="color:{{ block.settings.cl_text }}">{{ block.settings.text1 }} </span>{%endif%}
+                                     		 <a class="phone" href="tel:{{shop.phone}}" style="color:{{ block.settings.cl_phone }}">{{shop.phone}}</a>
+                                         </p>
+                                     </div>
+                                   {%endif%}
+                                  
+                                   
+                                   {%- if block.settings.show_email -%}
+                                 		<a href="mailto:{{shop.email}}" style="color:{{ block.settings.cl_text }}" target="_blank">{{shop.email}}</a>
+                                   {%endif%}
+                               </div>	
+                          	 </div>
+                          </aside>
+						</div>
+                   {%- when 'logo-footer' -%}
+                    
+                      <div class="footer-iteam footer-iteam-logo {{ block_width }}" {{ block.shopify_attributes }}>
+                      <aside id="block_{{block.id}}" class="widget widget_text alo-logo-footer">
+                      
+                    {% if block.settings.use_logo_footer %}
+                      <div class="logo-footer">
+                        {% if block.settings.logo_footer != blank %}
+                          <a href="{{ routes.root_url }}" class="site-header__logo-image">
+                          {% capture image_size %}{{ block.settings.logo_max_width | escape }}{% endcapture %}
+                          <img    
+                          loading="lazy"
+                          src="{{ block.settings.logo_footer | img_url: image_size, scale: 2 }}"                      
+                          alt="{{ logo_alt | escape }}"
+                          style="max-width: {{ image_size }}px; width:auto; height:auto;">
+                          </a>
+                        {% else %}
+                          <a class="site-title" href="{{ routes.root_url }}" itemprop="url"><span class="logo-default">{{ shop.name }}</span></a>
+                        {% endif %}
+                     </div>
+                      
+                    {% endif %}
+                    {%- if block.settings.hotline -%}
+                    <div class="hotline">
+                        {{ block.settings.hotline }}
+                    </div>
+                    {%endif%}  
+                    {%- if block.settings.content -%}
+                          <div class="content" style="--alo-color-text:{{ block.settings.text_color }};">{{block.settings.content}}</div>
+                     {%endif%}
+                    </aside>
+                    </div>
+                    
+                  {%- when 'html' -%}
+                    
+                          <div class="footer-iteam {{ block_width }}" {{ block.shopify_attributes }}>
+                            <aside id="block_{{block.id}}" class="widget widget_text ">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="textwidget widget_footer">
+                               {%- if block.settings.content != blank-%}
+                               <div class="contentHtml mb-20 alo-color" style="--alo-color:{{ block.settings.cl_content }};">
+                               		{{block.settings.content}}
+                               </div>
+                               {%endif%}
+                               <div class="ao-img mb-30" style="--alo-width:{{ block.settings.width_img }}px;"> 
+                                {% if block.settings.img %}  
+                                  {% render 'responsive-image', image: block.settings.img, image_class: 'w-auto h-full' %}
+                                {%- endif -%}
+                              </div>
+                               {%if block.settings.use_social%}
+                                  {% render 'social_link' %}
+                               {% endif %}
+                              </div>
+                          </aside>
+						</div>
+                    {%- when 'social_network' -%}
+                    
+                          <div class="footer-iteam {{ block_width }}" {{ block.shopify_attributes }}>
+                            <aside id="block_{{block.id}}" class="widget widget_text ">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="textwidget widget_footer">
+                               {%- if block.settings.content != blank-%}
+                               <div class="contentHtml mb-20 alo-color" style="--alo-color:{{ block.settings.cl_content }};">
+                               		{{block.settings.content}}
+                               </div>
+                               {%endif%}
+                               {%if block.settings.use_social%}
+                                  {% render 'social_link' %}
+                               {% endif %}
+                              </div>
+                          </aside>
+						</div>
+                       {%- when 'image' -%}
+                          <div class="footer-iteam {{ block_width }}" {{ block.shopify_attributes }}>
+                            <aside id="block_{{block.id}}" class="widget widget_text ">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="textwidget widget_footer">
+                                    <div class="image-footer">
+                                    {%- assign image = block.settings.image %}
+                                    {% assign url = block.settings.url -%}
+                                    {%- if image != blank -%}
+                                        {% render 'responsive-image', image: image, aspect_ratio:aspect_ratio, image_class: 'w-full h-full' url:url %}
+                                    {%- else -%}
+                                          {% if aspect_ratio != blank %}
+                                             {%- assign ratio =  1 | divided_by: aspect_ratio | times: 100 -%}
+                                          {% else %}
+                                              {%- assign ratio = 100 -%}
+                                          {% endif %}
+                                          <div class="image-card__img overflow-hidden alo-border-radius ratio" style="--alo-border-radius:{{ border }}px;--ratio-percent: {{ ratio }}%;">
+                                            {% capture current %}{% cycle 1, 2, 3, 4, 5 %}{% endcapture %}
+                                            {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg w-full h-full' }}
+                                          </div>
+                                    {%- endif -%}
+                                    </div>
+                              </div>
+                          </aside>
+						</div>
+                      {%- when 'instagram' -%}
+                          <div class="footer-iteam {{ block_width }}" {{ block.shopify_attributes }}>
+                            <aside id="block_{{block.id}}" class="widget widget_text ">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="textwidget widget_footer">
+                                    <div class="instagram-footer row">
+                                      {% render 'instagram_footer', block: block.settings%}
+                                    </div>
+                              </div>
+                          </aside>
+						</div>
+                    {%- when 'menu' -%}
+                     
+                          <div class="footer-iteam {{ block_width }}" {{ block.shopify_attributes }}>
+                            <aside id="block_{{block.id}}" class="widget widget_nav_menu">
+                             {{ Heading | strip_newlines | remove:"  "}}
+                             <div class="menu_footer widget_footer">
+                              {%- assign menu = block.settings.menu -%}
+                              {%- if menu != blank -%}
+                                <ul class="menu">
+                                  {%- for link in linklists[menu].links -%}
+                                   <li class="menu-item{% if link.active %}active{% endif %}">
+                                     <a class="alo-color alo-color-hover" style="--alo-color:{{ block.settings.cl_link }};--alo-color-hover:{{ block.settings.cl_link_hover }};" href="{{ link.url }}">{{ link.title | split: '[' | first }}
+                                     {% if link.object.all_products_count %}
+                                    	 <span class="n_products">({{ link.object.all_products_count }})</span>
+                                     {%endif%}
+                                     </a>
+                                  	</li>
+                                   {%- endfor -%}
+                                </ul>
+                                {%- else -%}
+                                  You have not selected the footer menu
+                                {%- endif -%}
+                             </div>
+                          </aside>
+                            </div>
+                     
+                  {%- endcase -%}
+              {%- endfor -%}

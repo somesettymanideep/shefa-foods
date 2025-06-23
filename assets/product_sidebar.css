@@ -1,0 +1,219 @@
+
+.sidebar-product .sidebar {
+  flex: 0 0 320px;
+  max-width: 320px;
+}
+.sidebar-product .sidebar-right {
+  order: 1;
+}
+.sidebar-product main {
+  width: calc(100% - 320px);
+}
+.product-sidebar h3.b-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--color-main);
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-border);
+    position: relative;
+}
+.product-sidebar h3.b-title:before {
+    content: "";
+    background-color: var(--color-secondary);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+}
+.menu_categories {
+  background: #fff;
+  border-radius: var(--alo-border-radius);
+  padding: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.menu_categories .nav-accordion {
+}
+.menu_categories .nav-accordion .menu-item {
+  position: relative;
+}
+.menu_categories .nav-accordion .menu-item > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.menu_categories .nav-accordion .menu-item.active > a {
+  color: var(--color-link-hover);
+}
+.menu_categories .nav-accordion .menu-item > a:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e8ec;
+  border-radius: 2px;
+  display: none;
+}
+.menu_categories .nav-accordion .menu-item.active > a:before {
+  background-color: var(--color-main);
+  border-color: var(--color-main);
+}
+.menu_categories .nav-accordion .menu-item > a:after {
+  content: "\e94c";
+  font-family: icon-dukamarket !important;
+  position: absolute;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+}
+.menu_categories .nav-accordion .menu-item .n_products {
+  margin-left: 5px;
+}
+.menu_categories .nav-accordion .expand,
+.menu_categories .nav-accordion .collapse {
+  font-size: 0;
+  position: absolute;
+  right: 0;
+  width: 15px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  top: 0;
+  cursor: pointer;
+}
+.menu_categories .nav-accordion .expand:before,
+.menu_categories .nav-accordion .collapse:before {
+  content: "\e94f";
+  font-family: icon-dukamarket !important;
+  font-size: 12px;
+  color: #8d979e;
+}
+.menu_categories .nav-accordion .expand:before {
+  content: "\e952";
+}
+.menu_categories .nav-accordion ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  display: none;
+}
+.laber_benefit{
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--alo-border-radius);
+  padding: 20px;
+}
+.laber_benefit .item-benefit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #E6ECF0;
+}
+.laber_benefit .item-benefit:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.laber_benefit .item-benefit .icon{
+  color:var(--color-main);
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1;
+
+}
+.laber_benefit .item-benefit .icon svg {
+  height: 35px;
+}
+
+.laber_benefit .item-benefit .icon.img{
+  width: 35px;
+  height: 35px;
+}
+.laber_benefit .item-benefit .content p {
+      margin: 0;
+    font-size: 14px;
+}
+.laber_benefit .item-benefit .content .title{
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-main);
+}
+#laber_product_sidebar .promobox{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--alo-border-radius);
+}
+#laber_product_sidebar .laber-product{
+  position: relative;
+  background: #fff;
+  border-radius: var(--alo-border-radius);
+  padding: 20px;
+  border: 1px solid var(--color-border);
+}
+#laber_product_sidebar .laber-product .product-item{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #E6ECF0;
+    border-radius: 0;
+}
+#laber_product_sidebar .laber-product .product-item:last-child,
+#laber_product_sidebar .laber-product .product-item .product-collection{margin:0;padding: 0;border:none;}
+#laber_product_sidebar .laber-product .slick-slide > div:last-child .product-item{
+	margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+#laber_product_sidebar .laber-product .product-item:hover .product-collection{
+	box-shadow:0 0 0;
+}
+#laber_product_sidebar .laber-product .product-item .group-button .inner .add-to-cart{
+	display:flex;
+}
+#laber_product_sidebar .laber-product .product-bottom-content{
+	display:none;
+}
+
+#laber_product_sidebar .laber-product .laber_append_dots{
+  padding: 0;
+  justify-content: center;
+  padding-top: 30px;
+}
+#laber_product_sidebar .laber-product .laber_append_dots .slick-dots{
+  width: auto;
+}
+#laber_product_sidebar .laber-product .laber_append_arrows{
+    display: flex;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+}
+#laber_product_sidebar .laber-product .slick-prev, 
+#laber_product_sidebar .laber-product .slick-next{
+  position: static;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+}

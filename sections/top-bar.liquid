@@ -1,0 +1,299 @@
+{% if section.settings.home_page_only == false or template.name == 'index' %}
+  {% if section.settings.header_use_top_header %}
+  <div class="topbar {% if section.settings.hide_top_header_mobile %}hide-mobile{% endif %} {% if section.settings.show_close_btn %} show-close-button parent-close{% endif %}" >
+    {% if section.settings.show_close_btn %}
+            <span class="announcement-close btn-close">
+                {% if section.settings.title_close_btn != blank %}<span class="title">{{section.settings.title_close_btn}}</span>{% endif %}
+                <i class="icon-btn-close icon-x"></i>
+            </span>
+        {% endif %}
+    <div class="{{section.settings.layout}}">
+        <div class="announcement-bar">
+          {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          	{%- when 'message' -%} 
+          		{% assign text_align = block.settings.text_align %}
+                  	<div class="wrapper-bar-message {{text_align}} flex w-full">
+                      <p class="announcement-bar__message">
+                        {{ block.settings.message_text }} 
+                            {%- if  block.settings.text_link != blank -%}
+                              <a id="b_{{block.id}}"  class="buttons alo-color-hover alo-color" style="--alo-color-hover:{{block.settings.color_link_hover}};--alo-color:{{block.settings.color_link}};" href="{{block.settings.btn_link}}" target="{{block.settings.open_link}}"
+                                 {{ block.shopify_attributes }}>{{block.settings.text_link}}</a>
+                            {%- endif -%}
+                      </p>
+                    </div>
+           {%- when 'banner' -%}
+            {%- assign assign h_des = block.settings.h_des -%}
+            {%- assign assign h_tb = block.settings.h_tb -%}
+            {%- assign assign h_mb = block.settings.h_mb -%}
+            {% assign image = block.settings.image_sl %}
+            {% assign image_mobile = block.settings.image_mobile |default : block.settings.image_sl %}
+            {% assign url = block.settings.link_img %}
+            {% assign open_link = block.settings.open_link %} 
+            <div class="banner-top" style="--alo-height-pc:{{ h_des }}; --alo-height-tb:{{ h_tb }};--alo-height-mb:{{ h_mb }}">
+              {% if image != blank %} 
+                {% render 'banner-image', image: image, image_class: 'w-full h-full sm:d-none',url: url,open_link:open_link %}
+                {% render 'banner-image', image: image_mobile, image_class: 'w-full h-full d-none sm:d-block',url: url,open_link:open_link %}
+              {% else %}
+                <div class="image-card__img absolute inset-0 w-full h-full" style="--aspect-ratio: 3;">
+                    {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}  
+                    {{ 'hero-apparel-' | append: current | placeholder_svg_tag: 'placeholder-svg w-full h-full object-cover' }}
+                </div>
+              {% endif %}
+            </div>
+          {%- endcase -%}
+          {%- endfor -%}
+        </div>
+    </div>
+  </div>
+  {% style%}
+  :root {
+  --bg-top-bar:{{section.settings.bg_top_header}};
+  --color-bd-top-bar:{{section.settings.cl_bd_top_bar}};
+  --color-text-top-bar:{{section.settings.cl_text}};
+  }
+  .alo_slidershow {--height-bar: 40px;}
+  {%endstyle%}
+  {% else %} 
+    {% style%}
+    .alo_slidershow {--height-bar: 0px;}
+    {%endstyle%}
+  {% endif %}
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Top Bar",
+    "class":"cms-top-header cms-top-bar",
+    "settings": [
+		{
+          "type": "header",
+          "content": "General settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "header_use_top_header",
+          "label": "Show top header",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_top_header_mobile",
+          "label": "Hide header (mobile)",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "home_page_only",
+          "label": "Home page only",
+          "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "show_close_btn",
+            "label": "Show close button",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "title_close_btn",
+            "label": "Title close button",
+            "info": "Leave it blank if you don't want to show it"
+        },       
+		{
+          "type": "select",
+          "id": "layout",
+          "default": "full-width",
+          "options": [
+           {
+              "value": "container",
+              "label": "Container"
+           },
+           {
+              "value": "full-width",
+              "label": "Full Width"
+            }
+          ],
+          "label": "Layout"
+        },
+		{
+          "type": "header",
+          "content": "Design"
+        },
+        {
+          "type": "color",
+          "id": "bg_top_header",
+          "label": "Background color",
+          "default": "#f5f5f5"
+        },
+        {
+          "type": "color",
+          "id": "cl_bd_top_bar",
+          "label": "Color border",
+          "default": "#f5f5f5"
+        },
+      
+		{
+          "type": "color",
+          "id": "cl_text",
+          "label": "Color text",
+          "default": "#777"
+        }
+	],
+	"blocks": [
+		{
+          "type": "message",
+          "name": "Announcement text",
+          "limit": 1,
+          "settings": [
+              {
+                "type": "text",
+                "id": "message_text",
+                "label": "Announcement text",
+                "default": "Free Delivery over £40 to most of UK*"
+              },
+              {
+                "type": "text",
+                "id": "text_link",
+                "label": "Link",
+                "default": "Shop Now"
+              },
+              {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button link",
+  			  "info": "Note: if you want to display this button then you need to fill button link"
+              }, 
+             {
+                "type": "select",
+                "id": "open_link",
+                "options": [
+                  {
+                    "value": "_self",
+                    "label": "Current window (_self)"
+                  },
+                 {
+                    "value": "_blank",
+                    "label": "New window (_blank)"
+                  }
+                ],
+                "label": "Open link in",
+                "default": "_blank"
+              },
+			  {
+                "type": "select",
+                "id": "text_align",
+                "default": "topbar-left",
+                "options": [ 
+                {
+                  "value": "topbar-left",
+                  "label": "Left"
+                },
+                {
+                  "value": "topbar-center",
+                  "label": "center"
+                },
+                {
+                  "value": "topbar-right",
+                  "label": "Right"
+                }
+                ],
+                  "label": "text align:"
+              },	
+              {
+              "type": "color",
+              "id": "color_link",
+              "label": "color",
+              "default": "#1a1a1a"
+              },
+              {
+              "type": "color",
+              "id": "bg_color_link",
+              "label": "Background color",
+              "default": "#fff"
+              },
+             {
+              "type": "color",
+              "id": "color_link_hover",
+              "label": "color (Hover)",
+              "default": "#1a1a1a"
+              },
+              {
+              "type": "color",
+              "id": "bg_color_link_hover",
+              "label": "Background color (Hover)",
+              "default": "#fff"
+              }
+          ]
+        },
+        {
+          "type": "banner",
+          "name": "Banner top",
+          "limit": 1,
+          "settings": [
+              {
+                "type": "text",
+                "id": "h_des",
+                "label": "Desktop Large",
+                "placeholder": "150px",
+                "default": "150px"
+              },
+              {
+                "type": "text",
+                "id": "h_tb",
+                "label": "Tablet (<= 1024px)",
+                "placeholder": "100px",
+                "default": "100px"
+              },
+              {
+                "type": "text",
+                "id": "h_mb",
+                "label": "Mobile (<= 767px)",
+                "placeholder": "150px",
+                "default": "150px"
+              },
+              {
+              "type": "image_picker",
+              "id": "image_sl",
+              "label": "Image"
+              },
+              {
+              "type": "url",
+              "id": "link_img",
+              "label": "Link image",
+              "info": "The image becomes clickable."
+              },
+              {
+              "type": "select",
+              "id": "open_link",
+              "options": [
+              {
+              "value": "_self",
+              "label": "Current window (_self)"
+              },
+              {
+              "value": "_blank",
+              "label": "New window (_blank)"
+              }
+              ],
+              "label": "Open link in",
+              "default": "_blank"
+              }
+          ]
+        }
+		
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+    jQuery(document).ready(function ($) {
+        $('.btn-close').on('click', function(){
+        $(this).parents('.parent-close').slideUp();
+        })
+    });
+{% endjavascript %}

@@ -1,0 +1,39 @@
+{%- liquid
+  assign image = block.settings.image
+  assign url =  block.settings.btn_link |default:"#"
+  assign open_link =  block.settings.open_link
+   
+-%}
+<div id="bk_{{block.id}}" class="img_grid_item {{ class }}  img_grid_item_{{for_i}}" style=" margin-bottom:{{ block.settings.mg_bottom }}px;" {{ block.shopify_attributes }} >
+    <div class="image_grid_item relative">
+        {%- if image != blank -%}
+          {% render 'responsive-image', image: image, url:url, aspect_ratio:aspect_ratio, open_link:open_link, border:section.settings.border, image_class: 'w-full h-full' %}
+        {%- else -%}
+          {% if aspect_ratio != blank %}
+               {%- assign ratio =  1 | divided_by: aspect_ratio | times: 100 -%}
+            {% else %}
+                {%- assign ratio = 100 -%}
+            {% endif %}
+            <div class="image-card__img overflow-hidden ratio alo-border-radius" style="--alo-border-radius:{{ section.settings.border }}px;--ratio-percent: {{ ratio }}%;">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg w-full h-full object-cover' }}
+            </div>
+        {%- endif -%}
+        <div class="content-image absolute inset-0 flex h_{{block.settings.h_position}} v_{{block.settings.v_position}} text_{{block.settings.txt_align}}">
+          <div class="content">
+            {% if block.settings.label != blank %}<div class="label mb-10 sm:mb-10 md:mb-10" style="--color-text:{{ block.settings.cl_label }};--color-span:{{ block.settings.cl_span_label }};"><span>{{ block.settings.label }}</span></div>{% endif %}
+            {% if block.settings.title != blank %}<h3 class="title mb-15 sm:mb-10 md:mb-10"  style="--color-text:{{ block.settings.cl_title }};">{{ block.settings.title }}</h3> {% endif %}
+            {% if block.settings.content != blank %}<div class="cnt mb-15 sm:mb-10 md:mb-10" style="--color-text:{{ block.settings.cl_content }};">{{ block.settings.content }}</div> {% endif %}
+            {% if block.settings.link != blank %}
+                <a id="b_{{block.id}}"  class="{{ block.settings.btn_style }}" href="{{url}}" target="{{open_link}}"
+                style="--color-link:{{ block.settings.cl_link }};--color-link-hover:{{ block.settings.cl_link_hover }};--bg-link:{{ block.settings.bg_link }};--bg-link-hover:{{ block.settings.bg_link_hover }};"  
+                {{ block.shopify_attributes }}>
+                {{block.settings.link}}
+                </a> 
+              {% endif %}
+          </div>  
+        </div>
+    </div>
+</div>
+
+
+

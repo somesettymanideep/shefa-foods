@@ -1,0 +1,419 @@
+{% liquid
+  assign sid = section.id 
+  assign se_blocks = section.blocks
+  assign se_size = se_blocks.size
+  assign layout = section.settings.layout
+%}
+<section id="laber_{{sid}}" {% if section.settings.hide_mobile %}class="hide-mobile"{% endif %} style="--alo-row:-{{ section.settings.gap }}px; --alo-gap:{{ section.settings.gap }}px;{% if section.settings.custom_width %}--alo-container-width:{{section.settings.container_width}}px;{% endif %}">
+  <div class="{%if layout %}full-width{% else %}container{%endif%}" >   
+    {% if section.settings.title != blank %}
+      <div class="wrap_title {{ section.settings.text_size }}">
+        <div class="h3 section-title alo-text-transform" style="--alo-text-transform:{{ section.settings.text_transform }}">{{section.settings.title}}</div>  
+      </div>
+    {% endif %}
+    <div class="row">
+            {%- case se_size -%}
+    			{%- when 1 -%}
+            		<article class="image-item col-12"> 
+                      {%- render 'image-item',block:se_blocks[0],for_i:se_size -%}
+                    </article>
+               {%- when 2 -%}
+            		<article class="image-item col-lg-6 col-md-6 col-12"> 
+                      {%- render 'image-item',block:se_blocks[0],for_i:se_size -%}
+                    </article> 
+                  <article class="cate-item col-lg-6 col-md-6 col-12"> 
+                    {%- render 'image-item',block:se_blocks[1],for_i:se_size -%}
+                  </article> 
+                {%- when 3 -%}
+            		<article class="image-item col-lg-4 col-md-12 col-12"> 
+                    {%- render 'image-item',block:se_blocks[0],for_i:se_size -%}
+                  </article> 
+                  <article class="image-item col-lg-4 col-md-12 col-12"> 
+                    {%- render 'image-item',block:se_blocks[1],for_i:se_size -%}
+                  </article>
+                  <article class="cate-item col-lg-4 col-md-12 col-12"> 
+                    {%- render 'image-item',block:se_blocks[2],for_i:se_size -%}
+                  </article>
+                {%- when 4 -%}
+            		<article class="image-item col-lg-6 col-md-12 col-12"> 
+                    {%- render 'image-item',block:se_blocks[0],for_i:se_size -%}
+                    </article> 
+                    <article class="image-item col-lg-6 col-md-12 col-12"> 
+                      <div class="row">
+                        {%- render 'image-item',block:se_blocks[1], class:"col-lg-6 col-md-12 col-12", for_i:se_size -%}
+                        {%- render 'image-item',block:se_blocks[2], class:"col-lg-6 col-md-12 col-12", for_i:se_size -%}
+                        {%- render 'image-item',block:se_blocks[3], class:"col-lg-12 col-md-12 col-12", for_i:se_size -%}
+                      </div>
+                    </article> 
+                    
+                {%- when 5 -%}
+                    <article class="image-item col-lg-5 col-md-12 col-12"> 
+                      {%- render 'image-item',block:se_blocks[0], for_i:se_size -%}
+                    </article> 
+                    <article class="image-item col-lg-7 col-md-12 col-12"> 
+                      <div class="row">
+                          {%- render 'image-item',block:se_blocks[1], class:"col-lg-7 col-md-12 col-12",for_i:se_size -%}
+                          {%- render 'image-item',block:se_blocks[2], class:"col-lg-5 col-md-12 col-12", for_i:se_size -%}
+                          {%- render 'image-item',block:se_blocks[3], class:"col-lg-5 col-md-12 col-12",for_i:se_size -%}
+                          {%- render 'image-item',block:se_blocks[4], class:"col-lg-7 col-md-12 col-12",for_i:se_size -%}
+                      </div>
+                    </article>
+           {%- endcase -%}
+    </div>
+  </div>
+</section>
+{%- render 'section_style' -%}
+{%- schema -%}
+  {
+    "name": "Images grid",
+    "class": "image_grid cms_section type_image_grid",
+    "max_blocks": 5,
+    "settings": [
+      {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Hide (mobile)",
+          "default": true
+        },
+      {
+        "type": "header",
+        "content": "== Title Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "default": "medium",
+        "options": [
+          {
+            "value": "small",
+            "label": "small"
+         },
+         {
+            "value": "medium",
+            "label": "Medium"
+         },
+         {
+            "value": "large",
+            "label": "Large"
+          }
+        ],
+        "label": "Text size"
+      },
+      {
+              "type": "select",
+              "id": "text_transform",
+              "default": "none",
+              "options": [
+               {
+                  "value": "none",
+                  "label": "None"
+               },
+               {
+                  "value": "capitalize",
+                  "label": "Capitalize"
+               },
+               {
+                  "value": "lowercase",
+                  "label": "Lowercase"
+               },
+               {
+                  "value": "uppercase",
+                  "label": "Uppercase"
+                }
+              ],
+              "label": "Text transform:"
+            },
+      {
+          "type": "range",
+          "id": "gap",
+          "label": "Gap",
+          "default": 0,
+          "min": 0,
+          "max": 15,
+          "step": 5,
+          "unit": "px"
+          },
+      {
+          "type": "range",
+          "id": "border",
+          "label": "Border",
+          "default": 0,
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px"
+          },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      {
+        "type": "checkbox",
+        "id": "layout",
+        "label":"Full Width",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "custom_width",
+        "label":"Custom width",
+        "default": false
+      },
+      {
+          "type": "range",  
+          "id": "container_width",  
+          "label": "Container width",
+          "min": 1200,
+          "max": 1900,
+          "step": 10,
+          "unit": "px",
+          "default": 1200 
+      },
+      {
+        "type": "color",
+        "id": "cl_bg",
+        "label": "Background color",
+        "default": "#fff"
+      },
+	  {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank"
+      },
+      {
+        "type": "text",
+        "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank"
+      },
+      {
+        "type": "header",
+        "content": "== Design Mobile Options"
+      },
+      {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin"
+      },
+      {
+        "type": "text",
+        "id": "pd_mb",
+        "label": "Padding"
+      }
+	
+    ],
+    "blocks": [
+	{
+    "type": "image",
+    "name": "Image",
+    "settings": [
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+       },
+      {
+        "type": "text",
+        "id": "label",
+        "label": "Label",
+        "info": "Note: If you do not want to display it you can leave it blank",
+        "default": "New arivals"
+      },
+      {
+          "type": "color",
+          "id": "cl_label",
+          "label": "Color (Label)",
+          "default": "#fff"
+        },
+      {
+          "type": "color",
+          "id": "cl_span_label",
+          "label": "Color HTML span tag (Label)",
+          "default": "#fcbe00"
+        },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Alo themes"
+      },
+      {
+          "type": "color",
+          "id": "cl_title",
+          "label": "Text color",
+          "default": "#fff"
+        },
+      {
+        "type": "textarea",
+        "id": "content",
+        "label": "Content",
+        "default": "Short Description.",
+        "info":"Insert <br> to line break"
+  
+      },
+      {
+          "type": "color",
+          "id": "cl_content",
+          "label": "Content color",
+          "default": "#fff"
+        },
+      
+      {
+          "type": "text",
+          "id": "link",
+          "label": "Link Name",
+          "default": "Shop now",
+          "info": "Note: If you do not want to display it you can leave it blank"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Link"
+        }, 
+       {
+          "type": "select",
+          "id": "open_link",
+          "options": [
+            {
+              "value": "_self",
+              "label": "Current window (_self)"
+            },
+           {
+              "value": "_blank",
+              "label": "New window (_blank)"
+            }
+          ],
+          "label": "Open link in",
+          "default": "_blank"
+        },
+        {
+          "type": "color",
+          "id": "cl_link",
+          "label": "Link color",
+          "default": "#222"
+        },
+        {
+          "type": "color",
+          "id": "cl_link_hover",
+          "label": "Link color hover",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_link",
+          "label": "Background (link)",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_link_hover",
+          "label": "Background hover (link)",
+          "default": "#222"
+        },
+      {
+              "type": "select",
+              "id": "btn_style",
+              "default": "link",
+              "options": [
+               {
+                  "value": "link",
+                  "label": "Link"
+               },
+               {
+                  "value": "btn",
+                  "label": "Buttons"
+                }
+              ],
+              "label": "Design style:"
+            },
+      {
+        "type": "select",
+        "id": "h_position",
+        "label": "Horizontal Position",
+        "default": "left",
+        "options": [
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "center",
+            "label": "Center"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            }
+          ]
+        },
+        {
+        "type": "select",
+        "id": "v_position",
+        "label": "Vertical Position",
+        "default": "top",
+        "options": [
+            {
+            "value": "top",
+            "label": "Top"
+            },
+            {
+            "value": "middle",
+            "label": "Middle"
+            },
+            {
+            "value": "bottom",
+            "label": "Bottom"
+            }
+          ]
+        },
+		{
+            "type": "select",
+            "id": "txt_align",
+            "label": "Text Align",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          },
+          {
+          "type": "range",
+          "id": "mg_bottom",
+          "label": "Margin bottom",
+          "default": 20,
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px"
+          }
+      ]
+    }
+],
+    "presets": [
+      {
+        "name": "Images grid",
+        "category": "Images",
+        "blocks": [
+          { "type": "image" },{ "type": "image" },{ "type": "image" }, { "type": "image" },{ "type": "image" }
+          
+        ]
+      }
+    ]
+  }
+{% endschema %}
